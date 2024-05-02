@@ -136,13 +136,15 @@ const LoginCallback = () => {
         }
         promoInfo={
           <span style={{ fontSize: 14, lineHeight: 1 }}>
-            MinIO is a cloud-native object store built to run on any
-            infrastructure - public, private or edge clouds. Primary use cases
-            include data lakes, databases, AI/ML, SaaS applications and fast
-            backup & recovery. MinIO is dual licensed under GNU AGPL v3 and
-            commercial license. To learn more, visit{" "}
-            <a href={"https://min.io/?ref=con"} target="_blank" rel="noopener">
-              www.min.io
+            Hospede facilmente suas aplicações web, sistemas desktop, bancos de
+            dados, sites, cargas de trabalho de IA e Machine Learning, game
+            servers, VPN ou ambientes de CI / CD.{" "}
+            <a
+              href={"https://absam.io/?ref=con"}
+              target="_blank"
+              rel="noopener"
+            >
+              absam.io
             </a>
             .
           </span>

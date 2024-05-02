@@ -107,7 +107,7 @@ const ConfigurationOptions = () => {
         <Grid item xs={12} id={"settings-container"}>
           <ScreenTitle
             icon={<SettingsIcon />}
-            title={"MinIO Configuration:"}
+            title={"Absam Storage Configuration:"}
             actions={
               <Box
                 sx={{
@@ -157,7 +157,7 @@ const ConfigurationOptions = () => {
           />
         </Grid>
         <Grid item xs={12} sx={{ paddingTop: "15px" }}>
-          <HelpBox
+          {/* <HelpBox
             title={"Learn more about Configurations"}
             iconComponent={<SettingsIcon />}
             help={
@@ -177,7 +177,7 @@ const ConfigurationOptions = () => {
                 .
               </Fragment>
             }
-          />
+          /> */}
         </Grid>
       </PageLayout>
     </Fragment>

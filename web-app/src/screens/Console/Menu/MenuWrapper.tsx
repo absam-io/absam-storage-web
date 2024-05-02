@@ -24,6 +24,7 @@ import { selFeatures } from "../consoleSlice";
 import { getLogoVar, registeredCluster } from "../../../config";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getLicenseConsent } from "../License/utils";
+import logo from "../../../images/logo.png";
 
 const MenuWrapper = () => {
   const dispatch = useAppDispatch();
@@ -40,7 +41,7 @@ const MenuWrapper = () => {
 
   const isAgplAckDone = getLicenseConsent();
   const clusterRegistered = registeredCluster();
-
+ 
   const { plan = "" } = licenseInfo || {};
 
   let licenseNotification = true;
@@ -51,23 +52,26 @@ const MenuWrapper = () => {
   const allowedMenuItems = validRoutes(features, licenseNotification);
 
   return (
-    <Menu
-      isOpen={sidebarOpen}
-      displayGroupTitles
-      options={allowedMenuItems}
-      applicationLogo={{ applicationName: "console", subVariant: getLogoVar() }}
-      callPathAction={(path) => {
-        navigate(path);
-      }}
-      signOutAction={() => {
-        navigate("/logout");
-      }}
-      collapseAction={() => {
-        dispatch(menuOpen(!sidebarOpen));
-      }}
-      currentPath={pathname}
-      mobileModeAuto={false}
-    />
+      <Menu
+        isOpen={sidebarOpen}
+        displayGroupTitles
+        options={allowedMenuItems}
+        applicationLogo={{
+          applicationName: "console",
+          subVariant: undefined,
+        }}
+        callPathAction={(path) => {
+          navigate(path);
+        }}
+        signOutAction={() => {
+          navigate("/logout");
+        }}
+        collapseAction={() => {
+          dispatch(menuOpen(!sidebarOpen));
+        }}
+        currentPath={pathname}
+        mobileModeAuto={false}
+      />
   );
 };
 

@@ -81,33 +81,33 @@ const StrategyForm = ({ redirectRules }: { redirectRules: RedirectRule[] }) => {
       icon: <LogoutIcon />,
     }));
 
-    selectOptions = [
-      { label: "Use Credentials", value: "use-sts-cred" },
-      { label: "Use STS", value: "use-sts" },
-    ];
+    // selectOptions = [
+    //   { label: "Use Credentials", value: "use-sts-cred" },
+    //   { label: "Use STS", value: "use-sts" },
+    // ];
   }
 
-  const extraActionSelector = (value: string) => {
-    if (value) {
-      if (redirectRules.length > 0) {
-        let stsState = true;
+  // const extraActionSelector = (value: string) => {
+  //   if (value) {
+  //     if (redirectRules.length > 0) {
+  //       let stsState = true;
 
-        if (value === "use-sts-cred") {
-          stsState = false;
-        }
+  //       if (value === "use-sts-cred") {
+  //         stsState = false;
+  //       }
 
-        dispatch(setUseSTS(stsState));
-        dispatch(setDisplayEmbeddedIDPForms(true));
+  //       dispatch(setUseSTS(stsState));
+  //       dispatch(setDisplayEmbeddedIDPForms(true));
 
-        return;
-      }
+  //       return;
+  //     }
 
-      if (value.includes("use-sts")) {
-        dispatch(setUseSTS(!useSTS));
-        return;
-      }
-    }
-  };
+  //     if (value.includes("use-sts")) {
+  //       dispatch(setUseSTS(!useSTS));
+  //       return;
+  //     }
+  //   }
+  // };
 
   const submitSSOInitRequest = (value: string) => {
     window.location.href = value;
@@ -128,7 +128,7 @@ const StrategyForm = ({ redirectRules }: { redirectRules: RedirectRule[] }) => {
                         ? ` - ${redirectRules[0].serviceType}`
                         : ""
                     }`
-                  : `Login with SSO`
+                  : `Login`
               }
               fullWidth
               sx={{ height: 50 }}
@@ -141,7 +141,7 @@ const StrategyForm = ({ redirectRules }: { redirectRules: RedirectRule[] }) => {
                 submitSSOInitRequest(`${redirectRules[0].redirect}`);
               }}
             />
-            {redirectRules.length > 1 && (
+            {/* {redirectRules.length > 1 && (
               <DropdownSelector
                 id={"redirect-rules"}
                 options={ssoOptions}
@@ -154,7 +154,7 @@ const StrategyForm = ({ redirectRules }: { redirectRules: RedirectRule[] }) => {
                 anchorEl={anchorEl}
                 useAnchorWidth={true}
               />
-            )}
+            )} */}
           </Box>
         </Fragment>
       )}
@@ -261,14 +261,14 @@ const StrategyForm = ({ redirectRules }: { redirectRules: RedirectRule[] }) => {
           </Fragment>
         )}
         <Grid item xs={12} sx={{ marginTop: 45 }}>
-          <Select
+          {/* <Select
             id="alternativeMethods"
             name="alternativeMethods"
             fixedLabel="Other Authentication Methods"
             options={selectOptions}
             onChange={extraActionSelector}
             value={""}
-          />
+          /> */}
         </Grid>
       </form>
     </React.Fragment>

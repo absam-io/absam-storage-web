@@ -55,4 +55,10 @@ export const tierTypes = [
     logo: <AzureTierIcon />,
     logoXs: <AzureTierIconXs />,
   },
+  {
+    serviceName: "custom",
+    targetTitle: "Custom",
+    logo: <MinIOTierIcon />,
+    logoXs: <MinIOTierIconXs />,
+  }
 ];

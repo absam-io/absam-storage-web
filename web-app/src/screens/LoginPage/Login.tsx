@@ -28,6 +28,7 @@ import { getLogoVar } from "../../config";
 import { RedirectRule } from "api/consoleApi";
 import { redirectRules } from "./login.utils";
 import { setHelpName } from "../../systemSlice";
+import newLogo from "logo.svg";
 
 export const getTargetPath = () => {
   let targetPath = "/browser";
@@ -134,11 +135,11 @@ const Login = () => {
       );
   }
 
-  let docsURL = "https://min.io/docs/minio/linux/index.html?ref=con";
-  if (isK8S) {
-    docsURL =
-      "https://min.io/docs/minio/kubernetes/upstream/index.html?ref=con";
-  }
+  // let docsURL = "https://min.io/docs/minio/linux/index.html?ref=con";
+  // if (isK8S) {
+  //   docsURL =
+  //     "https://min.io/docs/minio/kubernetes/upstream/index.html?ref=con";
+  // }
 
   useEffect(() => {
     dispatch(setHelpName("login"));
@@ -148,8 +149,9 @@ const Login = () => {
   return (
     <Fragment>
       <MainError />
+
       <LoginWrapper
-        logoProps={{ applicationName: "console", subVariant: getLogoVar() }}
+        logoProps={{ applicationName: "console", subVariant: undefined }}
         form={loginComponent}
         formFooter={
           <Box
@@ -160,7 +162,7 @@ const Login = () => {
               },
             }}
           >
-            <a href={docsURL} target="_blank" rel="noopener">
+            {/* <a href={docsURL} target="_blank" rel="noopener">
               Documentation
             </a>
             <span className={"separator"}>|</span>
@@ -186,21 +188,31 @@ const Login = () => {
               rel="noopener"
             >
               Download
-            </a>
+            </a> */}
           </Box>
         }
         promoHeader={
-          <span style={{ fontSize: 28 }}>High-Performance Object Store</span>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <img
+              src="https://dashboard.absam.io/img/logo_branca.png"
+              alt="Absam Logo"
+              width={400}
+            />{" "}
+            <div style={{ fontSize: 28, marginLeft: 32 }}>Object Storage</div>
+          </div>
         }
         promoInfo={
           <span style={{ fontSize: 14, lineHeight: 1 }}>
-            MinIO is a cloud-native object store built to run on any
-            infrastructure - public, private or edge clouds. Primary use cases
-            include data lakes, databases, AI/ML, SaaS applications and fast
-            backup & recovery. MinIO is dual licensed under GNU AGPL v3 and
-            commercial license. To learn more, visit{" "}
-            <a href={"https://min.io/?ref=con"} target="_blank" rel="noopener">
-              www.min.io
+            Hospede facilmente suas aplicações web, sistemas desktop, bancos de
+            dados, sites, cargas de trabalho de IA e Machine Learning, game
+            servers, VPN ou ambientes de CI / CD.{" "}
+            <a href={"https://absam.io"} target="_blank" rel="noopener">
+              absam.io
             </a>
             .
           </span>

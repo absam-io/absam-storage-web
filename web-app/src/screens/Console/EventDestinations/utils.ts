@@ -216,7 +216,7 @@ export const notificationEndpointsFields: any = {
     {
       name: "client_tls_cert",
       label: "client TLS cert",
-      tooltip: "Path to client certificate for mTLS authorization",
+    tooltip: "Path to client certificate for mTLS authorization",
       type: "path",
       placeholder: "Enter TLS Client Cert",
     },

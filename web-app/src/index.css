@@ -9,6 +9,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.gCGzVC .formPanel .logoContainer {
+  display: flex;
+  height: 155px !important;
+  
+  box-shadow: none !important;
+}
+
+.gCGzVC .formPanel .logoContainer svg {
+   display: none;
+}
+
+.gWmmTS .menuLogoContainer {
+  border-bottom: none !important;
+  content: "ahsdiashdiahs" !;
+  color: aliceblue !important;
+  z-index: 1000 !important;
+}
+
+.ftIxlS .menuLogoContainer {
+  border-bottom: none !important;
+}
+
+.ftIxlS .menuLogoContainer svg {
+    display: none;
+}
+
+.gWmmTS.collapsed .collapsedMenuHeader .collapsedIcon {
+  display: none !important;
+}
+
+ .gWmmTS .menuLogoContainer svg {
+  display: none;
+ }
+
+ .httUSP.selected,
+ .httUSP:hover {
+   color: rgb(255, 255, 255);
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(22, 7, 71) 100%) !important;
+ }
 
 /* Chrome, Safari, Edge, Opera */
 input.removeArrows::-webkit-outer-spin-button,
