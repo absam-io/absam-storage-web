@@ -24,7 +24,8 @@ import { selFeatures } from "../consoleSlice";
 import { getLogoVar, registeredCluster } from "../../../config";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getLicenseConsent } from "../License/utils";
-import logo from "../../../images/logo.png";
+import logoAbsam from "../../../logo_branca.webp";
+import smallLogo from "../../../logo-pequena.webp";
 
 const MenuWrapper = () => {
   const dispatch = useAppDispatch();
@@ -52,6 +53,8 @@ const MenuWrapper = () => {
   const allowedMenuItems = validRoutes(features, licenseNotification);
 
   return (
+    <>
+      {sidebarOpen ? <img src={logoAbsam} alt="Absam" className="logoAbsam" /> : <img src={smallLogo} alt="Absam" className="smallLogo" />}
       <Menu
         isOpen={sidebarOpen}
         displayGroupTitles
@@ -72,6 +75,7 @@ const MenuWrapper = () => {
         currentPath={pathname}
         mobileModeAuto={false}
       />
+    </>
   );
 };
 

@@ -12,12 +12,12 @@ code {
 .gCGzVC .formPanel .logoContainer {
   display: flex;
   height: 155px !important;
-  
+
   box-shadow: none !important;
 }
 
 .gCGzVC .formPanel .logoContainer svg {
-   display: none;
+  display: none;
 }
 
 .gWmmTS .menuLogoContainer {
@@ -32,22 +32,50 @@ code {
 }
 
 .ftIxlS .menuLogoContainer svg {
-    display: none;
+  display: none;
 }
 
 .gWmmTS.collapsed .collapsedMenuHeader .collapsedIcon {
   display: none !important;
 }
 
- .gWmmTS .menuLogoContainer svg {
+.gWmmTS .menuLogoContainer svg {
   display: none;
- }
+}
 
- .httUSP.selected,
- .httUSP:hover {
-   color: rgb(255, 255, 255);
-   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(22, 7, 71) 100%) !important;
- }
+.logoContainer svg {
+  display: none;
+}
+
+.collapsedIcon svg {
+  display: none;
+}
+
+.httUSP.selected,
+.httUSP:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(22, 7, 71) 100%
+  ) !important;
+}
+
+.logoAbsam {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 140px;
+  z-index: 999999999999;
+}
+
+.smallLogo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 40px;
+  z-index: 999999999999;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input.removeArrows::-webkit-outer-spin-button,

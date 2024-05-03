@@ -28,7 +28,7 @@ import { getLogoVar } from "../../config";
 import { RedirectRule } from "api/consoleApi";
 import { redirectRules } from "./login.utils";
 import { setHelpName } from "../../systemSlice";
-import newLogo from "logo.svg";
+import logoAbsam from "../../logo_branca.webp";
 
 export const getTargetPath = () => {
   let targetPath = "/browser";
@@ -199,7 +199,7 @@ const Login = () => {
             }}
           >
             <img
-              src="https://dashboard.absam.io/img/logo_branca.png"
+              src={logoAbsam}
               alt="Absam Logo"
               width={400}
             />{" "}

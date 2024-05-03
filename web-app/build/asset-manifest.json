@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.934099bf.css",
-    "main.js": "./static/js/main.ce84cc6e.js",
+    "main.css": "./static/css/main.73a78516.css",
+    "main.js": "./static/js/main.ed5929e7.js",
     "static/js/5301.2c626a41.chunk.js": "./static/js/5301.2c626a41.chunk.js",
     "static/js/9361.d47faaa6.chunk.js": "./static/js/9361.d47faaa6.chunk.js",
     "static/js/843.8502a4fd.chunk.js": "./static/js/843.8502a4fd.chunk.js",
@@ -116,10 +116,12 @@
     "static/media/Inter-Black.woff2": "./static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
     "static/media/Inter-Thin.woff2": "./static/media/Inter-Thin.fff2a096db014f6239d4.woff2",
     "static/media/Inter-Regular.woff2": "./static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/logo-pequena.webp": "./static/media/logo-pequena.04a9dd70979f54fda8a9.webp",
     "static/media/placeholderimage.png": "./static/media/placeholderimage.077ea48bd1ef1f4a883f.png",
+    "static/media/logo_branca.webp": "./static/media/logo_branca.836641a77907f09d4080.webp",
     "index.html": "./index.html",
-    "main.934099bf.css.map": "./static/css/main.934099bf.css.map",
-    "main.ce84cc6e.js.map": "./static/js/main.ce84cc6e.js.map",
+    "main.73a78516.css.map": "./static/css/main.73a78516.css.map",
+    "main.ed5929e7.js.map": "./static/js/main.ed5929e7.js.map",
     "5301.2c626a41.chunk.js.map": "./static/js/5301.2c626a41.chunk.js.map",
     "9361.d47faaa6.chunk.js.map": "./static/js/9361.d47faaa6.chunk.js.map",
     "843.8502a4fd.chunk.js.map": "./static/js/843.8502a4fd.chunk.js.map",
@@ -216,7 +218,7 @@
     "1011.13d372c8.chunk.js.map": "./static/js/1011.13d372c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.934099bf.css",
-    "static/js/main.ce84cc6e.js"
+    "static/css/main.73a78516.css",
+    "static/js/main.ed5929e7.js"
   ]
 }
